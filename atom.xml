@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>熊🐻的小屋</title>
+  
+  <subtitle>不忘初心，脚踏实地</subtitle>
+  <link href="http://example.com/atom.xml" rel="self"/>
+  
+  <link href="http://example.com/"/>
+  <updated>2023-06-23T12:00:47.702Z</updated>
+  <id>http://example.com/</id>
+  
+  <author>
+    <name>熊禹涵</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hexo配置记录</title>
+    <link href="http://example.com/2023/06/23/hexo-problem/"/>
+    <id>http://example.com/2023/06/23/hexo-problem/</id>
+    <published>2023-06-23T11:46:36.000Z</published>
+    <updated>2023-06-23T12:00:47.702Z</updated>
+    
+    <content type="html"><![CDATA[<p>&#x672C;&#x535A;&#x5BA2;&#x5C06;&#x4F1A;&#x8BB0;&#x5F55;&#x4E00;&#x4E9B;Hexo&#x914D;&#x7F6E;&#x8FC7;&#x7A0B;&#x4E2D;&#x9047;&#x5230;&#x7684;&#x95EE;&#x9898;</p><h2 id="&#x56FE;&#x7247;&#x4E0A;&#x4F20;&#x63D2;&#x4EF6;"><a href="#&#x56FE;&#x7247;&#x4E0A;&#x4F20;&#x63D2;&#x4EF6;" class="headerlink" title="&#x56FE;&#x7247;&#x4E0A;&#x4F20;&#x63D2;&#x4EF6;"></a>&#x56FE;&#x7247;&#x4E0A;&#x4F20;&#x63D2;&#x4EF6;</h2><p>&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x63D2;&#x4EF6;&#x63A8;&#x8350;&#x5B89;&#x88C5;&#x63D2;&#x4EF6;&#xFF1A;hexo-image-link<br>&#x5B89;&#x88C5;&#x65B9;&#x6CD5;&#xFF1A;</p><blockquote><p>npm install hexo-image-link &#x2013;save</p></blockquote><p>&#x4FEE;&#x6539;config.yml&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#xFF1A;</p><blockquote><p>hexo-asset-folder: true</p></blockquote><p>&#x8FD9;&#x6837;&#x8BBE;&#x7F6E;&#x4E4B;&#x540E;&#x6BCF;&#x6B21;hexo new &#x201C;title&#x201D;&#x5C31;&#x80FD;&#x751F;&#x6210;title.md&#x548C;title&#x6587;&#x4EF6;&#x5939;<br>&#x63A5;&#x7740;&#x5C06;&#x56FE;&#x7247;&#x62F7;&#x8D1D;&#x5230;&#x540C;&#x540D;&#x6587;&#x4EF6;&#x5939;&#x4E0B;&#x9762;<br>markdown&#x8BED;&#x6CD5;&#x4E3A;&#xFF1A;</p><blockquote><p>! [ &#x914D;&#x7F6E;&#x6587;&#x4EF6; ] (/image.jpg)</p></blockquote><img lazyload src="/2023/06/23/hexo-problem/images/loading.svg" data-src="/2023/06/23/hexo-problem/image.png" class title="&#x6587;&#x4EF6;&#x7ED3;&#x6784;"><img lazyload src="/2023/06/23/hexo-problem/images/loading.svg" data-src="/2023/06/23/hexo-problem/use.png" class title="&#x4F7F;&#x7528;&#x65B9;&#x5F0F;">]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&amp;#x672C;&amp;#x535A;&amp;#x5BA2;&amp;#x5C06;&amp;#x4F1A;&amp;#x8BB0;&amp;#x5F55;&amp;#x4E00;&amp;#x4E9B;Hexo&amp;#x914D;&amp;#x7F6E;&amp;#x8FC7;&amp;#x7A0B;&amp;#x4E2D;&amp;#x9047;&amp;#x5230;&amp;#x76</summary>
+      
+    
+    
+    
+    
+    <category term="hexo" scheme="http://example.com/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Nginx记录</title>
+    <link href="http://example.com/2023/06/23/nginx-problem/"/>
+    <id>http://example.com/2023/06/23/nginx-problem/</id>
+    <published>2023-06-23T11:07:51.000Z</published>
+    <updated>2023-06-23T12:00:16.681Z</updated>
+    
+    <content type="html"><![CDATA[<p>&#x672C;&#x535A;&#x5BA2;&#x5C06;&#x4F1A;&#x8BB0;&#x5F55;&#x4E00;&#x4E9B;Nginx&#x4E2D;&#x9047;&#x5230;&#x7684;&#x4E00;&#x4E9B;&#x7EC6;&#x8282;&#x95EE;&#x9898;&#xFF0C;&#x4EE5;&#x540E;&#x51CF;&#x5C11;&#x67E5;&#x8BE2;&#x65F6;&#x95F4;&#x3002;</p><h2 id="index&#x9875;&#x9762;&#x4F4D;&#x7F6E;"><a href="#index&#x9875;&#x9762;&#x4F4D;&#x7F6E;" class="headerlink" title="index&#x9875;&#x9762;&#x4F4D;&#x7F6E;"></a>index&#x9875;&#x9762;&#x4F4D;&#x7F6E;</h2><blockquote><p>/usr/share/nginx/html</p></blockquote><h2 id="docker&#x8FDB;&#x5165;Nginx&#x5BB9;&#x5668;"><a href="#docker&#x8FDB;&#x5165;Nginx&#x5BB9;&#x5668;" class="headerlink" title="docker&#x8FDB;&#x5165;Nginx&#x5BB9;&#x5668;"></a>docker&#x8FDB;&#x5165;Nginx&#x5BB9;&#x5668;</h2><blockquote><p>docker exec -it &#x5BB9;&#x5668;&#x540D;&#x6216;id /bin/bash#&#x8FDB;&#x5165;&#x5BB9;&#x5668;</p></blockquote><h2 id="&#x5BB9;&#x5668;&#x4E0B;&#x8F7D;vim"><a href="#&#x5BB9;&#x5668;&#x4E0B;&#x8F7D;vim" class="headerlink" title="&#x5BB9;&#x5668;&#x4E0B;&#x8F7D;vim"></a>&#x5BB9;&#x5668;&#x4E0B;&#x8F7D;vim</h2><blockquote><p>apt-get update#&#x66F4;&#x65B0;&#x5305;&#x7BA1;&#x7406;<br>apt-get install vim -y   #&#x5B89;&#x88C5;vim</p></blockquote><h2 id="&#x914D;&#x7F6E;&#x4FEE;&#x6539;"><a href="#&#x914D;&#x7F6E;&#x4FEE;&#x6539;" class="headerlink" title="&#x914D;&#x7F6E;&#x4FEE;&#x6539;"></a>&#x914D;&#x7F6E;&#x4FEE;&#x6539;</h2><blockquote><p>vim /etc/nginx/nginx.conf</p></blockquote><img lazyload src="/2023/06/23/nginx-problem/images/loading.svg" data-src="/2023/06/23/nginx-problem/image.jpg" class title="&#x914D;&#x7F6E;&#x6587;&#x4EF6;">]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&amp;#x672C;&amp;#x535A;&amp;#x5BA2;&amp;#x5C06;&amp;#x4F1A;&amp;#x8BB0;&amp;#x5F55;&amp;#x4E00;&amp;#x4E9B;Nginx&amp;#x4E2D;&amp;#x9047;&amp;#x5230;&amp;#x7684;&amp;#x4E00;&amp;#x4E9B;&amp;#x7EC6;&amp;#x8</summary>
+      
+    
+    
+    
+    
+    <category term="Nginx" scheme="http://example.com/tags/Nginx/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Docker Centos问题总结</title>
+    <link href="http://example.com/2023/06/23/centos-problem/"/>
+    <id>http://example.com/2023/06/23/centos-problem/</id>
+    <published>2023-06-23T09:24:36.000Z</published>
+    <updated>2023-06-23T12:00:32.839Z</updated>
+    
+    <content type="html"><![CDATA[<p>&#x672C;&#x535A;&#x5BA2;&#x8BB0;&#x5F55;&#x4E00;&#x4E9B;&#x5B66;&#x4E60;docker&#x8FC7;&#x7A0B;&#x4E2D;&#x9047;&#x5230;&#x7684;&#x95EE;&#x9898;</p><h2 id="&#x65E0;sudo&#x65E0;yum"><a href="#&#x65E0;sudo&#x65E0;yum" class="headerlink" title="&#x65E0;sudo&#x65E0;yum"></a>&#x65E0;sudo&#x65E0;yum</h2><p><em>&#x62A5;&#x9519;&#xFF1A;Failed to download metadata for repo appstream &#x2013; CentOS 8</em><br><em>Error: Failed to download metadata for repo &#x2018;appstream&#x2019;: Cannot prepare internal mirrorlist: No URLs in mirrorlist</em></p><ol><li>&#x89E3;&#x91CA;&#xFF1A; 2021&#x5E74;12&#x6708;31&#x65E5;&#xFF0C;CentOS 8&#x7EC8;&#x7ED3;&#x4E86;&#xFF0C;&#x5E76;&#x4E14;CentOS 8&#x5E76;&#x4E0D;&#x4F1A;&#x81EA;&#x52A8;&#x8FC1;&#x79FB;&#x81F3;&#x4E0B;&#x4E00;&#x4E2A;&#x7248;&#x672C;&#xFF08;CentOS Stream 8&#xFF09;&#xFF0C;&#x56E0;&#x6B64;&#x9700;&#x8981;&#x624B;&#x52A8;&#x8FDB;&#x884C;&#x8FC1;&#x79FB;&#x3002;</li><li>&#x505A;&#x6CD5;&#xFF1A;&#x8FC1;&#x79FB;&#x81F3;&#x65B0;&#x7248;&#x672C; <div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">dnf --disablerepo &apos;*&apos; --enablerepo=extras swap centos-linux-repos centos-stream-repos</span><br></pre></td></tr></table></figure></div> <div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">dnf distro-sync</span><br></pre></td></tr></table></figure></div></li></ol>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&amp;#x672C;&amp;#x535A;&amp;#x5BA2;&amp;#x8BB0;&amp;#x5F55;&amp;#x4E00;&amp;#x4E9B;&amp;#x5B66;&amp;#x4E60;docker&amp;#x8FC7;&amp;#x7A0B;&amp;#x4E2D;&amp;#x9047;&amp;#x5230;&amp;#x7684;&amp;#x95EE;&amp;#x</summary>
+      
+    
+    
+    
+    
+    <category term="docker" scheme="http://example.com/tags/docker/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>👋 你好，欢迎来到我的网站！</title>
+    <link href="http://example.com/2023/05/17/my-introduction/"/>
+    <id>http://example.com/2023/05/17/my-introduction/</id>
+    <published>2023-05-17T13:33:28.000Z</published>
+    <updated>2023-06-23T12:00:18.923Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="&#x1F3E0;-&#x5173;&#x4E8E;&#x672C;&#x7AD9;"><a href="#&#x1F3E0;-&#x5173;&#x4E8E;&#x672C;&#x7AD9;" class="headerlink" title="&#x1F3E0; &#x5173;&#x4E8E;&#x672C;&#x7AD9;"></a>&#x1F3E0; &#x5173;&#x4E8E;&#x672C;&#x7AD9;</h1><p>&#x662F;&#x1F43B;&#x963F;&#x718A;&#x1F43B;&#x7684;&#x4E2A;&#x4EBA;&#x535A;&#x5BA2;&#x5440;</p><h1 id="&#x1F4CB;-&#x6211;&#x7684;&#x9879;&#x76EE;"><a href="#&#x1F4CB;-&#x6211;&#x7684;&#x9879;&#x76EE;" class="headerlink" title="&#x1F4CB; &#x6211;&#x7684;&#x9879;&#x76EE;"></a>&#x1F4CB; &#x6211;&#x7684;&#x9879;&#x76EE;</h1><p>&#x6211;&#x7684;&#x65E7;&#x535A;&#x5BA2;&#xFF1A;            <a class="link" href="https://uniquexiong.github.io/">https://uniquexiong.github.io <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p><p>&#x5C0F;&#x6DD8;&#x6C14;&#x6258;&#x7BA1;&#xFF1A;            <a class="link" href="http://120.27.153.238/">http://120.27.153.238 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p><ul><li>&#x540E;&#x7AEF;&#xFF1A;                <a class="link" href="https://gitee.com/little-naughty-trusteeship/naughty">https://gitee.com/little-naughty-trusteeship/naughty <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li><li>&#x5BA2;&#x6237;&#x7AEF;&#xFF1A;              <a class="link" href="https://gitee.com/little-naughty-trusteeship/naghtyclient">https://gitee.com/little-naughty-trusteeship/naghtyclient <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li><li>&#x5FAE;&#x4FE1;&#x5C0F;&#x7A0B;&#x5E8F;&#xFF1A; &#x641C;&#x7D22;&#xFF1A;&#x201C;&#x5C0F;&#x6DD8;&#x6C14;&#x6258;&#x7BA1;&#x201D;</li></ul><p>&#x6211;&#x7684;&#x52A8;&#x6001;&#xFF1A;             </p><ul><li>&#x540E;&#x7AEF;&#xFF1A;                <a class="link" href="https://gitee.com/xiong-yuhan/gift-rear">https://gitee.com/xiong-yuhan/gift-rear <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li><li>&#x5BA2;&#x6237;&#x7AEF;&#xFF1A;                <a class="link" href="https://gitee.com/xiong-yuhan/gift-front">https://gitee.com/xiong-yuhan/gift-front <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li></ul><p>&#x4E8C;&#x624B;&#x4EA4;&#x6613;&#x7F51;&#x7AD9;&#xFF1A; <a class="link" href="https://gitee.com/xiong-yuhan/shopping">https://gitee.com/xiong-yuhan/shopping <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p><p>&#x535A;&#x5BA2;&#x540E;&#x7AEF;&#xFF1A; <a class="link" href="https://gitee.com/xiong-yuhan/blog">https://gitee.com/xiong-yuhan/blog <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p><h1 id="&#x1F468;&#x200D;&#x1F4BB;-&#x535A;&#x4E3B;&#x662F;&#x8C01;"><a href="#&#x1F468;&#x200D;&#x1F4BB;-&#x535A;&#x4E3B;&#x662F;&#x8C01;" class="headerlink" title="&#x1F468;&#x200D;&#x1F4BB; &#x535A;&#x4E3B;&#x662F;&#x8C01;"></a>&#x1F468;&#x200D;&#x1F4BB; &#x535A;&#x4E3B;&#x662F;&#x8C01;</h1><p>&#x534E;&#x4E2D;&#x79D1;&#x6280;&#x5927;&#x5B66;&#x8BA1;&#x7B97;&#x673A;&#x79D1;&#x5B66;&#x4E0E;&#x6280;&#x672F;&#x4E13;&#x4E1A;&#x5728;&#x8BFB;&#x5B66;&#x751F;</p><h1 id="&#x26F9;-&#x5174;&#x8DA3;&#x7231;&#x597D;"><a href="#&#x26F9;-&#x5174;&#x8DA3;&#x7231;&#x597D;" class="headerlink" title="&#x26F9; &#x5174;&#x8DA3;&#x7231;&#x597D;"></a>&#x26F9; &#x5174;&#x8DA3;&#x7231;&#x597D;</h1><p>&#x1F3C0;&#x1F3C0;&#x1F3C0;&#x7BEE;&#x7403;&#xFF0C;&#x76EE;&#x524D;&#x662F;&#x9662;&#x961F;&#x6210;&#x5458;</p><h1 id="&#x1F4EC;-&#x8054;&#x7CFB;&#x6211;&#x5440;"><a href="#&#x1F4EC;-&#x8054;&#x7CFB;&#x6211;&#x5440;" class="headerlink" title="&#x1F4EC; &#x8054;&#x7CFB;&#x6211;&#x5440;"></a>&#x1F4EC; &#x8054;&#x7CFB;&#x6211;&#x5440;</h1><p>qq: 1007282836<br>email&#xFF1A;</p><ul><li><a class="link" href="mailto:1007282836@qq.com">1007282836@qq.com <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li><li><a class="link" href="mailto:uniquexiong123@gmail.com">uniquexiong123@gmail.com <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;&amp;#x1F3E0;-&amp;#x5173;&amp;#x4E8E;&amp;#x672C;&amp;#x7AD9;&quot;&gt;&lt;a href=&quot;#&amp;#x1F3E0;-&amp;#x5173;&amp;#x4E8E;&amp;#x672C;&amp;#x7AD9;&quot; class=&quot;headerlink&quot; title=&quot;&amp;#x1F3E0</summary>
+      
+    
+    
+    
+    
+    <category term="about me" scheme="http://example.com/tags/about-me/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://example.com/2023/05/17/hello-world/"/>
+    <id>http://example.com/2023/05/17/hello-world/</id>
+    <published>2023-05-17T11:53:18.940Z</published>
+    <updated>2023-05-17T11:53:18.940Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a class="link" href="https://hexo.io/">Hexo <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>! This is your very first post. Check <a class="link" href="https://hexo.io/docs/">documentation <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> for more info. If you get any problems when using Hexo, you can find the answer in <a class="link" href="https://hexo.io/docs/troubleshooting.html">troubleshooting <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> or you can ask me on <a class="link" href="https://github.com/hexojs/hexo/issues">GitHub <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure></div><p>More info: <a class="link" href="https://hexo.io/docs/writing.html">Writing <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure></div><p>More info: <a class="link" href="https://hexo.io/docs/server.html">Server <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure></div><p>More info: <a class="link" href="https://hexo.io/docs/generating.html">Generating <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure></div><p>More info: <a class="link" href="https://hexo.io/docs/one-command-deployment.html">Deployment <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;Welcome to &lt;a class=&quot;link&quot; href=&quot;https://hexo.io/&quot;&gt;Hexo &lt;i class=&quot;fa-regular fa-arrow-up-right-from-square fa-sm&quot;&gt;&lt;/i&gt;&lt;/a&gt;! This is your </summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+</feed>
