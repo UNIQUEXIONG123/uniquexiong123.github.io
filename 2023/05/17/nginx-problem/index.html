@@ -13,20 +13,24 @@
     
     <!--- Seo Part-->
     
-    <link rel="canonical" href="http://example.com/"/>
+    <link rel="canonical" href="http://example.com/2023/05/17/nginx-problem/"/>
     <meta name="robots" content="index,follow">
     <meta name="googlebot" content="index,follow">
     <meta name="revisit-after" content="1 days">
     
-        <meta name="description" content="欢迎来到熊🐻的小屋～">
-<meta property="og:type" content="website">
-<meta property="og:title" content="熊🐻的小屋">
-<meta property="og:url" content="http://example.com/index.html">
+        <meta name="description" content="本博客将会记录一些Nginx中遇到的一些细节问题，以后减少查询时间。 index页面位置 &#x2F;usr&#x2F;share&#x2F;nginx&#x2F;html  docker进入Nginx容器 docker exec -it 容器名或id &#x2F;bin&#x2F;bash		#进入容器  容器下载vim apt-get update		#更新包管理apt-get install">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Nginx记录">
+<meta property="og:url" content="http://example.com/2023/05/17/nginx-problem/index.html">
 <meta property="og:site_name" content="熊🐻的小屋">
-<meta property="og:description" content="欢迎来到熊🐻的小屋～">
+<meta property="og:description" content="本博客将会记录一些Nginx中遇到的一些细节问题，以后减少查询时间。 index页面位置 &#x2F;usr&#x2F;share&#x2F;nginx&#x2F;html  docker进入Nginx容器 docker exec -it 容器名或id &#x2F;bin&#x2F;bash		#进入容器  容器下载vim apt-get update		#更新包管理apt-get install">
 <meta property="og:locale">
+<meta property="og:image" content="http://example.com/image.png">
+<meta property="article:published_time" content="2023-05-17T11:53:18.940Z">
+<meta property="article:modified_time" content="2023-06-23T10:47:55.529Z">
 <meta property="article:author" content="熊禹涵">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/image.png">
     
     
         <!-- Google tag (gtag.js) -->
@@ -47,6 +51,8 @@
     <!--- Page Info-->
     
     <title>
+        
+            Nginx记录 -
         
         熊🐻的小屋
     </title>
@@ -109,50 +115,19 @@
 <main class="page-container">
 
     
-        
-
-<div class="home-banner-container flex-center">
-    <div class="content flex-center">
-        <div class="description fade-in-down-animation" >
-          熊🐻's 小屋 
-          
-            <p><i id="subtitle"></i></p>
-          
-        </div>
-        
-            <div class="social-contacts fade-in-down-animation">
-                
-                    
-                        
-                            <span class="social-contact-item email">
-                                <a href="mailto:uniquexiong123@gmail.com">
-                                    <i class="fa-solid fa-envelope"></i>
-                                </a>
-                            </span>
-                        
-                    
-                
-            </div>
-        
-    </div>
-</div>
-
-
-
-    
 
     <div class="main-content-container">
 
         <div class="main-content-header">
             <header class="navbar-container">
     
-    <div class="navbar-content has-home-banner">
+    <div class="navbar-content">
         <div class="left">
             
             <a class="logo-title" href="/">
-                <h1>
+                
                 熊🐻的小屋
-                </h1>
+                
             </a>
         </div>
 
@@ -164,7 +139,7 @@
                         
                             <li class="navbar-item">
                                 <!-- Menu -->
-                                <a class="active" 
+                                <a class="" 
                                     href="/"  >
                                     
                                         
@@ -307,7 +282,7 @@
             
                 
                     <li class="drawer-navbar-item flex-center">
-                        <a class="active" 
+                        <a class="" 
                         href="/"  >
                              
                                 
@@ -427,255 +402,206 @@
         <div class="main-content-body">
 
             
-                <div class="home-sidebar-container fade-in-down-animation">
-    <div class="sticky-container">
-        
-            
-                <div class="sidebar-links">
-                    <div class="site-info">
-                        <div class="site-name">熊🐻的小屋</div>
-                        
-                            <div class="announcement">
-                                Welcome to 🐻's home!
-                            </div>
-                        
-                    </div>
-                    
-                        
-                            
-                                <a class="links" href="/archives" target="_blank">
-                                    
-                                        <i class="fa-regular fa-archive icon-space"></i>
-                                    
-                                    <span class="link-name">Archives</span>
-                                </a>
-                            
-                        
-                            
-                                <a class="links" href="/tags" target="_blank">
-                                    
-                                        <i class="fa-regular fa-tags icon-space"></i>
-                                    
-                                    <span class="link-name">Tags</span>
-                                </a>
-                            
-                        
-                    
-                </div>
-            
-            <div class="sidebar-content"  marginTop >
-                <div class="avatar">
-                    <img src="/images/avatar.png">
-                </div>
-                <div class="author">
-                    <div class="name">熊崽崽</div>
-                    
-                        <div class="label">Lv1</div>
-                    
-                </div>
-                <div class="statistics">
-                    <a class="item" href="/tags">
-                        <div class="number">1</div>
-                        <div class="label">Tags</div>
-                    </a>
-                    <a class="item" href="/categories">
-                        <div class="number">0</div>
-                        <div class="label">Categories</div>
-                    </a>
-                    <a class="item" href="/archives">
-                        <div class="number">4</div>
-                        <div class="label">Posts</div>
-                    </a>
-                </div>
-            </div>
-        
-
-    </div>
-</div>
-
-            
 
             <div class="main-content">
 
                 
-                    <div class="home-content-container fade-in-down-animation">
-    <ul class="home-article-list">
-        
-            <li class="home-article-item">
+                    <div class="fade-in-down-animation">
+    <div class="post-page-container">
+        <div class="article-content-container">
 
-                
-
-                
-
-                <h3 class="home-article-title">
-                    <a href="/2023/05/17/my-introduction/">
-                        👋 你好，欢迎来到我的网站！
-                    </a>
-                </h3>
-
-                <div class="home-article-content markdown-body">
-                    
-                        🏠 关于本站是🐻阿熊🐻的个人博客呀
-📋 我的项目我的旧博客：            https://uniquexiong.github.io 
-小淘气托管：            http://120.27.153.238 
-
-后端：   ...
-                    
+            
+            
+                <div class="article-title">
+                    <h1 class="article-title-regular">Nginx记录</h1>
                 </div>
+            
+                
+            
 
-                <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span><i class="fa-solid fa-calendars"></i>&nbsp;
-            <span class="home-article-date" data-date="Wed May 17 2023 21:33:28 GMT+0800">
-                
-                    2023-05-17
-                
-            </span>
-        </span>
-        
-        
-            <span class="home-article-tag">
-                <i class="fa-solid fa-tags"></i>&nbsp;
-                <ul>
-                    
-                        <li>
+            
+                <div class="article-header">
+                    <div class="avatar">
+                        <img src="/images/avatar.png">
+                    </div>
+                    <div class="info">
+                        <div class="author">
+                            <span class="name">熊崽崽</span>
                             
-                            <a href="/tags/about-me/">about me</a>&nbsp;
-                        </li>
-                    
-                </ul>
-            </span>
-        
-    </div>
-
-    <a href="/2023/05/17/my-introduction/">Read more<span class="seo-reader-text">👋 你好，欢迎来到我的网站！</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
-</div>
-
-            </li>
-        
-            <li class="home-article-item">
-
-                
-
-                
-
-                <h3 class="home-article-title">
-                    <a href="/2023/05/17/hello-world/">
-                        Hello World
-                    </a>
-                </h3>
-
-                <div class="home-article-content markdown-body">
-                    
-                        Welcome to Hexo ! This is your very first post. Check documentation  for more info. If you get any problems when using Hexo, ...
-                    
-                </div>
-
-                <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span><i class="fa-solid fa-calendars"></i>&nbsp;
-            <span class="home-article-date" data-date="Wed May 17 2023 19:53:18 GMT+0800">
-                
-                    2023-05-17
-                
-            </span>
+                                <span class="author-label">Lv1</span>
+                            
+                        </div>
+                        <div class="meta-info">
+                            <div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        <i class="fa-regular fa-pen-fancy"></i>&nbsp;
+        <span class="desktop">2023-05-17 19:53:18</span>
+        <span class="mobile">2023-05-17 19:53</span>
+        <span class="hover-info">Created</span>
+    </span>
+    
+        <span class="article-date article-meta-item">
+            <i class="fa-regular fa-wrench"></i>&nbsp;
+            <span class="desktop">2023-06-23 18:47:55</span>
+            <span class="mobile">2023-06-23 18:47</span>
+            <span class="hover-info">Updated</span>
         </span>
-        
-        
-    </div>
+    
 
-    <a href="/2023/05/17/hello-world/">Read more<span class="seo-reader-text">Hello World</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
-</div>
+    
+    
 
-            </li>
-        
-            <li class="home-article-item">
-
-                
-
-                
-
-                <h3 class="home-article-title">
-                    <a href="/2023/05/17/centos-problem/">
-                        Docker pull Centos 遇到的问题总结
-                    </a>
-                </h3>
-
-                <div class="home-article-content markdown-body">
-                    
-                        本博客记录一些学习docker过程中遇到的问题
-无sudo无yum报错：Failed to download metadata for repo appstream – CentOS 8Error: Failed to download metada...
-                    
-                </div>
-
-                <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span><i class="fa-solid fa-calendars"></i>&nbsp;
-            <span class="home-article-date" data-date="Wed May 17 2023 19:53:18 GMT+0800">
-                
-                    2023-05-17
-                
-            </span>
+    
+    
+    
+    
+        <span class="article-pv article-meta-item">
+            <i class="fa-regular fa-eye"></i>&nbsp;<span id="busuanzi_value_page_pv"></span>
         </span>
-        
-        
-    </div>
-
-    <a href="/2023/05/17/centos-problem/">Read more<span class="seo-reader-text">Docker pull Centos 遇到的问题总结</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
+    
 </div>
 
-            </li>
-        
-            <li class="home-article-item">
-
-                
-
-                
-
-                <h3 class="home-article-title">
-                    <a href="/2023/05/17/nginx-problem/">
-                        Nginx记录
-                    </a>
-                </h3>
-
-                <div class="home-article-content markdown-body">
-                    
-                        本博客将会记录一些Nginx中遇到的一些细节问题，以后减少查询时间。
-index页面位置
-&#x2F;usr&#x2F;share&#x2F;nginx&#x2F;html
-
-docker进入Nginx容器
-docker exec -it 容器名或i...
-                    
+                        </div>
+                    </div>
                 </div>
+            
 
-                <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span><i class="fa-solid fa-calendars"></i>&nbsp;
-            <span class="home-article-date" data-date="Wed May 17 2023 19:53:18 GMT+0800">
-                
-                    2023-05-17
-                
-            </span>
-        </span>
+            <div class="article-content markdown-body">
+                <p>本博客将会记录一些Nginx中遇到的一些细节问题，以后减少查询时间。</p>
+<h2 id="index页面位置"><a href="#index页面位置" class="headerlink" title="index页面位置"></a>index页面位置</h2><blockquote>
+<p>&#x2F;usr&#x2F;share&#x2F;nginx&#x2F;html</p>
+</blockquote>
+<h2 id="docker进入Nginx容器"><a href="#docker进入Nginx容器" class="headerlink" title="docker进入Nginx容器"></a>docker进入Nginx容器</h2><blockquote>
+<p>docker exec -it 容器名或id &#x2F;bin&#x2F;bash		#进入容器</p>
+</blockquote>
+<h2 id="容器下载vim"><a href="#容器下载vim" class="headerlink" title="容器下载vim"></a>容器下载vim</h2><blockquote>
+<p>apt-get update		#更新包管理<br>apt-get install vim -y   #安装vim</p>
+</blockquote>
+<h2 id="配置修改"><a href="#配置修改" class="headerlink" title="配置修改"></a>配置修改</h2><blockquote>
+<p>vim &#x2F;etc&#x2F;nginx&#x2F;nginx.conf</p>
+</blockquote>
+<p><figure class="image-caption"><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/image.png"
+                      alt="Alt text"
+                ><figcaption>Alt text</figcaption></figure></p>
+
+            </div>
+
+            
+                <div class="post-copyright-info">
+                    <div class="article-copyright-info-container">
+    <ul>
+        <li><strong>Title:</strong> Nginx记录</li>
+        <li><strong>Author:</strong> 熊崽崽</li>
+        <li><strong>Created at:</strong> 2023-05-17 19:53:18</li>
         
-        
-    </div>
-
-    <a href="/2023/05/17/nginx-problem/">Read more<span class="seo-reader-text">Nginx记录</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
-</div>
-
+            <li>
+                <strong>Updated at:</strong> 2023-06-23 18:47:55
             </li>
         
+        <li>
+            <strong>Link:</strong> https://redefine.ohevan.com/2023/05/17/nginx-problem/
+        </li>
+        <li>
+            <strong>License:</strong> This work is licensed under <a class="license" target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">CC BY-NC-SA 4.0</a>.
+        </li>
     </ul>
-
-    <div class="home-paginator">
-        <div class="paginator">
-    <span class="page-number current">1</span>
 </div>
+
+                </div>
+            
+
+            
+
+            
+
+            
+                <div class="article-nav">
+                    
+                        <div class="article-prev">
+                            <a class="prev"
+                            rel="prev"
+                            href="/2023/05/17/centos-problem/"
+                            >
+                                <span class="left arrow-icon flex-center">
+                                    <i class="fa-solid fa-chevron-left"></i>
+                                </span>
+                                <span class="title flex-center">
+                                    <span class="post-nav-title-item">Docker pull Centos 遇到的问题总结</span>
+                                    <span class="post-nav-item">Prev posts</span>
+                                </span>
+                            </a>
+                        </div>
+                    
+                    
+                </div>
+            
+
+
+            
+                <div class="comment-container">
+                    <div class="comments-container">
+    <div id="comment-anchor"></div>
+    <div class="comment-area-title">
+        <i class="fa-solid fa-comments"></i>&nbsp;Comments
+    </div>
+    
+
+        
+            
+ 
+    <div id="waline"></div>
+    <script type="module"  data-pjax>
+        import { init } from 'https://evan.beee.top/js/waline.mjs';
+
+        function loadWaline() {
+            init({
+                el: '#waline',
+                serverURL: 'https://example.example.com',
+                lang: 'zh-CN',
+                dark: 'body[class~="dark-mode"]',
+                requiredMeta: ['nick','mail'], // cannot customize by theme config, change it yourself
+            });
+        }
+
+        if ('true') {
+            const loadWalineTimeout = setTimeout(() => {
+                loadWaline();
+                clearTimeout(loadWalineTimeout);
+            }, 1000);
+        } else {
+            window.addEventListener('DOMContentLoaded', loadWaline);
+        }
+        
+    </script>
+
+
+
+        
+    
+</div>
+
+                </div>
+            
+        </div>
+
+        
+            <div class="toc-content-container">
+                <div class="post-toc-wrap">
+    <div class="post-toc">
+        <div class="toc-title">On this page</div>
+        <div class="page-title">Nginx记录</div>
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#index%E9%A1%B5%E9%9D%A2%E4%BD%8D%E7%BD%AE"><span class="nav-text">index页面位置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#docker%E8%BF%9B%E5%85%A5Nginx%E5%AE%B9%E5%99%A8"><span class="nav-text">docker进入Nginx容器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%B9%E5%99%A8%E4%B8%8B%E8%BD%BDvim"><span class="nav-text">容器下载vim</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%85%8D%E7%BD%AE%E4%BF%AE%E6%94%B9"><span class="nav-text">配置修改</span></a></li></ol>
 
     </div>
 </div>
+            </div>
+        
+    </div>
+</div>
+
 
                 
 
@@ -752,6 +678,27 @@ docker exec -it 容器名或i...
     </div>
 
     
+        <div class="post-tools">
+            <div class="post-tools-container">
+    <ul class="article-tools-list">
+        <!-- TOC aside toggle -->
+        
+            <li class="right-bottom-tools page-aside-toggle">
+                <i class="fa-regular fa-outdent"></i>
+            </li>
+        
+
+        <!-- go comment -->
+        
+            <li class="go-comment">
+                <i class="fa-regular fa-comments"></i>
+            </li>
+        
+    </ul>
+</div>
+
+        </div>
+    
 
     <div class="right-side-tools-container">
         <div class="side-tools-container">
@@ -811,7 +758,6 @@ docker exec -it 容器名或i...
 
 
 
-
 <script src="/js/utils.js"></script>
 
 <script src="/js/main.js"></script>
@@ -864,6 +810,16 @@ docker exec -it 容器名或i...
 
 
 <div class="post-scripts pjax">
+    
+        
+<script src="/js/tools/tocToggle.js"></script>
+
+<script src="/js/libs/anime.min.js"></script>
+
+<script src="/js/layouts/toc.js"></script>
+
+<script src="/js/plugins/tabs.js"></script>
+
     
 </div>
 
