@@ -40,7 +40,7 @@
 </ul>
 ]]></content>
       <tags>
-        <tag>docker, linux</tag>
+        <tag>docker linux</tag>
       </tags>
   </entry>
   <entry>
@@ -162,8 +162,9 @@
     <url>/2023/06/24/docker-problem/</url>
     <content><![CDATA[<p>&#x672C;&#x535A;&#x5BA2;&#x8BB0;&#x5F55;&#x5728;&#x5B66;&#x4E60;docker&#x8FC7;&#x7A0B;&#x4E2D;&#x9047;&#x5230;&#x7684;&#x4E00;&#x4E9B;&#x95EE;&#x9898;</p>
 <h2 id="&#x76EE;&#x5F55;&#x6302;&#x8F7D;"><a href="#&#x76EE;&#x5F55;&#x6302;&#x8F7D;" class="headerlink" title="&#x76EE;&#x5F55;&#x6302;&#x8F7D;"></a>&#x76EE;&#x5F55;&#x6302;&#x8F7D;</h2><blockquote>
-<p>docker run -it -v /Users:/usr/local/tomcat/webapps &#x2013;name=mew-tomcat my-tomcat<br>&#x8FD9;&#x5C06;&#x628A;&#x672C;&#x5730;&#x7684;Users&#x6587;&#x4EF6;&#x5939;&#x4E0B;&#x9762;&#x7684;&#x76EE;&#x5F55;&#x6302;&#x8F7D;&#x5230;/usr/local/tomcat/webapps&#x6587;&#x4EF6;&#x5939;&#x4E2D;&#xFF0C;&#x5E76;&#x4E14;&#x5C06;&#x91CC;&#x9762;&#x539F;&#x6765;&#x7684;&#x4E1C;&#x897F;&#x8FDB;&#x884C;&#x8986;&#x76D6;</p>
+<p>docker run -it -v /Users:/usr/local/tomcat/webapps &#x2013;name=mew-tomcat my-tomcat</p>
 </blockquote>
+<p>&#x8FD9;&#x5C06;&#x628A;&#x672C;&#x5730;&#x7684;Users&#x6587;&#x4EF6;&#x5939;&#x4E0B;&#x9762;&#x7684;&#x76EE;&#x5F55;&#x6302;&#x8F7D;&#x5230;/usr/local/tomcat/webapps&#x6587;&#x4EF6;&#x5939;&#x4E2D;&#xFF0C;&#x5E76;&#x4E14;&#x5C06;&#x91CC;&#x9762;&#x539F;&#x6765;&#x7684;&#x4E1C;&#x897F;&#x8FDB;&#x884C;&#x8986;&#x76D6;</p>
 ]]></content>
       <tags>
         <tag>docker</tag>
