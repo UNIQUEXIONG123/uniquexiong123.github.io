@@ -7,19 +7,23 @@
 <h1 id="Docker-&#x73AF;&#x5883;&#x95EE;&#x9898;"><a href="#Docker-&#x73AF;&#x5883;&#x95EE;&#x9898;" class="headerlink" title="Docker &#x73AF;&#x5883;&#x95EE;&#x9898;"></a>Docker &#x73AF;&#x5883;&#x95EE;&#x9898;</h1><h2 id="CentOS"><a href="#CentOS" class="headerlink" title="CentOS"></a>CentOS</h2><p><em>&#x62A5;&#x9519;&#xFF1A;Failed to download metadata for repo appstream &#x2013; CentOS 8</em><br><em>Error: Failed to download metadata for repo &#x2018;appstream&#x2019;: Cannot prepare internal mirrorlist: No URLs in mirrorlist</em></p>
 <ol>
 <li>&#x89E3;&#x91CA;&#xFF1A; 2021&#x5E74;12&#x6708;31&#x65E5;&#xFF0C;CentOS 8&#x7EC8;&#x7ED3;&#x4E86;&#xFF0C;&#x5E76;&#x4E14;CentOS 8&#x5E76;&#x4E0D;&#x4F1A;&#x81EA;&#x52A8;&#x8FC1;&#x79FB;&#x81F3;&#x4E0B;&#x4E00;&#x4E2A;&#x7248;&#x672C;&#xFF08;CentOS Stream 8&#xFF09;&#xFF0C;&#x56E0;&#x6B64;&#x9700;&#x8981;&#x624B;&#x52A8;&#x8FDB;&#x884C;&#x8FC1;&#x79FB;&#x3002;</li>
-<li>&#x505A;&#x6CD5;&#xFF1A;&#x8FC1;&#x79FB;&#x81F3;&#x65B0;&#x7248;&#x672C; <div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">dnf --disablerepo &apos;*&apos; --enablerepo=extras swap centos-linux-repos centos-stream-repos</span><br></pre></td></tr></table></figure></div>
- <div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">dnf distro-sync</span><br></pre></td></tr></table></figure></div></li>
+<li>&#x505A;&#x6CD5;&#xFF1A;&#x8FC1;&#x79FB;&#x81F3;&#x65B0;&#x7248;&#x672C;<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">dnf --disablerepo &apos;*&apos; --enablerepo=extras swap centos-linux-repos centos-stream-repos</span><br></pre></td></tr></table></figure></div>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">dnf distro-sync</span><br></pre></td></tr></table></figure></div></li>
 </ol>
 <h2 id="Ubuntu"><a href="#Ubuntu" class="headerlink" title="Ubuntu"></a>Ubuntu</h2><p><em>&#x62A5;&#x9519;bash: sudo: command not found</em></p>
 <p>&#x6309;&#x7167;&#x5982;&#x4E0B;&#x987A;&#x5E8F;&#x6267;&#x884C;&#xFF1A;</p>
 <blockquote>
 <p>apt-get update<br>apt-get install sudo</p>
 </blockquote>
-<p>&#x6CA1;&#x6709;vim&#x88C5;vim&#xFF1A;</p>
+<ol>
+<li><p>&#x6CA1;&#x6709;vim&#x88C5;vim&#xFF1A;</p>
 <blockquote>
 <p>sudo apt-get install vim</p>
 </blockquote>
-<p>ubuntu&#x67E5;&#x770B;ip&#xFF1A;</p>
+</li>
+<li><p>ubuntu&#x67E5;&#x770B;ip&#xFF1A;</p>
+</li>
+</ol>
 <ul>
 <li>&#x5982;&#x679C;&#x8981;&#x6267;&#x884C;ip&#x547D;&#x4EE4;&#xFF0C;&#x5B89;&#x88C5;iproute2&#x8F6F;&#x4EF6;&#x5305;:<blockquote>
 <p>apt install iproute2</p>
@@ -35,6 +39,31 @@
 </li>
 <li>&#x67E5;&#x770B;IP&#x5730;&#x5740;&#xFF1A;<blockquote>
 <p>ifconfig</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="Docker&#xFF1A;"><a href="#Docker&#xFF1A;" class="headerlink" title="Docker&#xFF1A;"></a>Docker&#xFF1A;</h2><ol>
+<li><p>&#x5B89;&#x88C5;docker</p>
+<blockquote>
+<p> curl -fsSL <a class="link" href="https://test.docker.com/">https://test.docker.com <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> -o test-docker.sh<br>sudo sh test-docker.sh</p>
+</blockquote>
+</li>
+<li><p>&#x4F7F;&#x7528;docker&#xFF1A;<br>&#x5982;&#x679C;&#x51FA;&#x73B0;&#x7C7B;&#x4F3C;&#x4E8E;&#x8FD9;&#x6837;&#x7684;&#x62A5;&#x9519;</p>
+<blockquote>
+<p>System has not been booted with systemd as init system (PID 1). Can&#x2019;t operate.</p>
+</blockquote>
+</li>
+</ol>
+<p>&#x8FD9;&#x610F;&#x5473;&#x7740;&#x5BB9;&#x5668;&#x4E2D;&#x7684;linux&#x6CA1;&#x6709;privilege&#xFF0C;&#x89E3;&#x51B3;&#x529E;&#x6CD5;&#x662F;&#x5728;&#x542F;&#x52A8;&#x7684;&#x65F6;&#x5019;&#x5C31;&#x7ED9;&#x4E88;&#x4F18;&#x5148;&#x7EA7;&#xFF0C;&#x5982;&#x4E0B;&#xFF1A;</p>
+<ul>
+<li><p>&#x521B;&#x5EFA;&#x65B0;&#x5BB9;&#x5668;&#xFF1A;</p>
+<blockquote>
+<p>docker run -it &#x2013;privileged container-name /bin/bash</p>
+</blockquote>
+</li>
+<li><p>&#x542F;&#x52A8;&#x5DF2;&#x6709;&#x5BB9;&#x5668;&#xFF1A;</p>
+<blockquote>
+<p>docker exec -it &#x2013;privileged container-name /bin/bash</p>
 </blockquote>
 </li>
 </ul>
@@ -166,6 +195,20 @@
 <p>docker run -it -v /Users:/usr/local/tomcat/webapps &#x2013;name=mew-tomcat my-tomcat</p>
 </blockquote>
 <p>&#x8FD9;&#x5C06;&#x628A;&#x672C;&#x5730;&#x7684;Users&#x6587;&#x4EF6;&#x5939;&#x4E0B;&#x9762;&#x7684;&#x76EE;&#x5F55;&#x6302;&#x8F7D;&#x5230;/usr/local/tomcat/webapps&#x6587;&#x4EF6;&#x5939;&#x4E2D;&#xFF0C;&#x5E76;&#x4E14;&#x5C06;&#x91CC;&#x9762;&#x539F;&#x6765;&#x7684;&#x4E1C;&#x897F;&#x8FDB;&#x884C;&#x8986;&#x76D6;</p>
+<p>&#x4E4B;&#x540E;&#x4E24;&#x904D;&#x6570;&#x636E;&#x53CC;&#x5411;&#x7ED1;&#x5B9A;&#xFF0C;&#x4FEE;&#x6539;&#x4E00;&#x8FB9;&#xFF0C;&#x53E6;&#x5916;&#x4E00;&#x8FB9;&#x540C;&#x6B65;&#x4FEE;&#x6539;</p>
+<h2 id="Dockerfile"><a href="#Dockerfile" class="headerlink" title="Dockerfile"></a>Dockerfile</h2><ul>
+<li><p>&#x76EE;&#x5F55;&#x7ED3;&#x6784;&#xFF1A;</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">FROM            # &#x57FA;&#x7840;&#x955C;&#x955C;&#x50CF;&#xFF0C;&#x4E00;&#x5207;&#x4ECE;&#x8FD9;&#x91CC;&#x5F00;&#x59CB;&#x6784;&#x5EFA;</span><br><span class="line">MAINTAINER      # &#x955C;&#x50CF;&#x662F;&#x8C01;&#x5199;&#x7684;&#xFF0C;&#x59D3;&#x540D;&#xFF0B;&#x90AE;&#x7BB1;</span><br><span class="line">RUN             &#xFF03; &#x955C;&#x50CF;&#x6812;&#x5EFA;&#x7684;&#x65F6;&#x5019;&#x9700;&#x8981;&#x8FD0;&#x884C;&#x7684;&#x547D;&#x4EE4;</span><br><span class="line">ADD             # &#x6B65;&#x9AA4;&#xFF1A;tomcat&#x955C;&#x50CF;&#xFF0C;&#x8FD9;&#x4E2A;tomcat&#x538B;&#x7F29;&#x5305;&#xFF01;&#x6DFB;&#x52A0;&#x5185;&#x5BB9;</span><br><span class="line">WORKDIR         &#xFF03; &#x955C;&#x50CF;&#x7684;&#x5DE5;&#x4F5C;&#x76EE;&#x5F55;</span><br><span class="line">VOLUME          &#xFF03; &#x6302;&#x8F7D;&#x7684;&#x76EE;&#x5F55;</span><br><span class="line">EXPOSE          &#xFF03; &#x4FDD;&#x7559;&#x7AEF;&#x53E3;&#x914D;&#x7F6E;</span><br><span class="line">CMD             &#xFF03; &#x6307;&#x5B9A;&#x8FD9;&#x4E2A;&#x5BB9;&#x5668;&#x542F;&#x52A8;&#x7684;&#x65F6;&#x5019;&#x8981;&#x8FD0;&#x884C;&#x7684;&#x547D;&#x4EE4;,&#x53EA;&#x6709;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x4F1A;&#x751F;&#x6548;&#xFF0C;&#x53EF;&#x88AB;&#x66FF;&#x4EE3;</span><br><span class="line">ENTRYPOINT      &#xFF03; &#x6307;&#x5B9A;&#x8FD9;&#x4E2A;&#x5BB9;&#x5668;&#x542F;&#x52A8;&#x7684;&#x65F6;&#x5019;&#x8981;&#x8FD0;&#x884C;&#x7684;&#x547D;&#x4EE4;&#xFF0C;&#x53EF;&#x4EE5;&#x8FFD;&#x52A0;&#x547D;&#x4EE4;</span><br><span class="line">ONBUILD         # &#x5F53;&#x6784;&#x5EFA;&#x4E00;&#x4E2A;&#x88AB;&#x7EE7;&#x627F; DockerFile &#x8FD9;&#x4E2A;&#x65F6;&#x5019;&#x5C31;&#x4F1A;&#x8FD0;&#x884C; ONBUILD &#x7684;&#x6307;&#x4EE4;&#x3002;&#x89E6;&#x53D1;&#x6307;&#x4EE4;&#x3002;</span><br><span class="line">COPY            #&#x7C7B;&#x4F3C;ADD&#xFF0C;&#x5C06;&#x6211;&#x4EEC;&#x6587;&#x4EF6;&#x62F7;&#x8D1D;&#x5230;&#x955C;&#x50CF;&#x4E2D;</span><br><span class="line">ENV             &#xFF03; &#x6784;&#x5EFA;&#x7684;&#x65F6;&#x5019;&#x8BBE;&#x7F6E;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#xFF01;</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p>&#x521B;&#x5EFA;&#x81EA;&#x5DF1;&#x7684;Dockerfile</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">FROM centos:7               #2022&#x5E74;concos&#x79FB;&#x9664;&#x4E86;centos&#xFF1A;8&#x7684;&#x5305;&#xFF0C;&#x6240;&#x4EE5;&#x8981;&#x7528;7</span><br><span class="line">ENV MYPATH /usr/local</span><br><span class="line">WORKDIR $MYPATH</span><br><span class="line">RUN yum -y install vim</span><br><span class="line">RUN yum -y install net-tools</span><br><span class="line">EXPOSE 80</span><br><span class="line">CMD echo $MYPATH</span><br><span class="line">CMD echo &quot;---end---&quot;</span><br><span class="line">CMD /bin/bash</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p>scratch image</p>
+</li>
+</ul>
+<p>scratch &#x53EF;&#x80FD;&#x662F;docker&#x4E2D;&#x6700;&#x5C0F;&#x7684;&#x955C;&#x50CF;&#x3002;&#x4E8B;&#x5B9E;&#x4E0A;&#xFF0C;&#x8FD9;&#x4E2A;&#x955C;&#x50CF;&#x662F;&#x7A7A;&#x7684;&#xFF0C;&#x91CC;&#x9762;&#x4E0D;&#x542B;&#x6709;&#x4EFB;&#x4F55;&#x6587;&#x4EF6;&#x6216;&#x8005;&#x6587;&#x4EF6;&#x5939;&#xFF0C;&#x5B83;&#x4EC5;&#x4EC5;&#x662F;&#x6784;&#x5EFA;&#x6211;&#x4EEC;&#x955C;&#x50CF;&#x7684;&#x4E00;&#x4E2A;&#x8D77;&#x59CB;&#x70B9;&#x3002;</p>
+<p>&#x4E3A;&#x4E86;&#x5728;scratch&#x4E0A;&#x9762;&#x8FD0;&#x884C;&#x4E8C;&#x8FDB;&#x5236;&#x6587;&#x4EF6;&#xFF0C;&#x6211;&#x4EEC;&#x7684;&#x53EF;&#x6267;&#x884C;&#x7A0B;&#x5E8F;&#x9700;&#x8981;&#x9759;&#x6001;&#x7F16;&#x8BD1;&#x548C;&#x81EA;&#x5305;&#x542B;&#x3002;&#x610F;&#x5473;&#x7740;&#x56FE;&#x50CF;&#x4E2D;&#x6CA1;&#x6709;&#x7F16;&#x8BD1;&#x5668;&#xFF0C;&#x53EA;&#x5269;&#x4E0B;&#x7CFB;&#x7EDF;&#x8C03;&#x7528;&#x3002;</p>
+<p>&#x4F60;&#x4E5F;&#x4E0D;&#x80FD;&#x591F;&#x767B;&#x9646;&#x8FDB;&#x5165;&#x5BB9;&#x5668;&#xFF0C;&#x6BEB;&#x65E0;&#x7591;&#x95EE;&#xFF0C;&#x5176;&#x4E2D;&#x4E5F;&#x6CA1;&#x6709;shell&#xFF0C;&#x9664;&#x975E;&#x4F60;&#x660E;&#x786E;&#x589E;&#x52A0;&#x4E00;&#x4E2A;&#x3002;</p>
 ]]></content>
       <tags>
         <tag>docker</tag>
